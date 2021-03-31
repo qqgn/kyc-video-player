@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+        <title>suV Demo</title>
+    </head>
+    <body>
+        <h1>suV Video Player</h1>
+        <p>How to use that?<br>Please show <a href ="https://static.kde.jp/suv-video-player/README.md">README.md</a></p>    
+        <div id ="suv-video-contents">
+            <h2 id ="suv-video-title">Video Player</h2>
+            <div id ="suv-video">
+                <video width ="50%" id ="suv-video-video" src="vid/demo.mp4"><p>suVの利用には最新のウェブブラウザが必要です。</p></video><br>
+                <input type="range" id="suv-video-range" min="0" max="100" step="1" value ="0">
+                <button id ="suv-video-start-button" onClick="VideoStart()">再生</button>
+                <button id ="suv-video-start-button" onClick="VideoStop()">一時停止</button>
+                <script src ="src/suv-video-controller.js"></script>
+            </div>
+            <div id ="suv-bottom">
+                Presented by KiriYuno
+                <a href ="https://github.com/kiriyuno">GitHub</a>
+            </div>
+        </div>
+    </body>
+</html>
